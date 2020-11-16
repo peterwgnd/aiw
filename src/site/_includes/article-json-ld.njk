@@ -1,0 +1,27 @@
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ page.url | url | absoluteUrl("https://leading.gsb.columbia.edu/") }}"
+      },
+      "headline": "{{ title }}",
+      "image": [
+        "https://res.cloudinary.com/cbs1916/image/upload/c_fill,g_auto,h_1800,w_1800/covid{{ image }}"
+       ],
+      "datePublished": "{{ date }}",
+      "author": {
+        "@type": "Person",
+        "name": "{{ author }}"
+      },
+       "publisher": {
+        "@type": "Organization",
+        "name": "Columbia Business School",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://leading.gsb.columbia.edu/icons/logo-cbs.gif"
+        }
+      }
+    }
+</script>

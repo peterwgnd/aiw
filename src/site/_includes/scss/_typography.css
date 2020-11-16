@@ -1,0 +1,362 @@
+ @import url("https://use.typekit.net/rrq5kyj.css");
+
+@mixin oldstyle {
+  font-variant-numeric: oldstyle-nums;
+  -moz-font-feature-settings:“onum";
+  -webkit-font-feature-settings:“onum";
+  font-feature-settings:“onum";
+}
+
+@mixin lining {
+  font-variant-numeric: tabular-nums;
+  -moz-font-feature-settings:“tnum";
+  -webkit-font-feature-settings:“tnum";
+  font-feature-settings:“tnum";
+}
+
+$serif : adobe-garamond-pro,georgia,serif;
+
+$minor-second: 1.067;
+$major-second: 1.125;
+$minor-third: 1.2;
+$major-third: 1.25;
+$perfect-fourth: 1.333;
+$augmented-fourth: 1.41; 
+$perfect-fifth: 1.5;
+$golden: 1.618;
+
+$type-scale: $minor-third;
+
+$type-size-1: 1rem;
+$type-size-0: calc($type-size-1/$type-scale);
+$type-size-00: calc($type-size-0/$type-scale);
+$type-size-000: calc($type-size-00/$type-scale);
+
+$type-size-2: calc($type-size-1*$type-scale);
+$type-size-3: calc($type-size-2*$type-scale);
+$type-size-4: calc($type-size-3*$type-scale);
+$type-size-5: calc($type-size-4*$type-scale);
+$type-size-6: calc($type-size-5*$type-scale);
+$type-size-7: calc($type-size-6*$type-scale);
+$type-size-8: calc($type-size-7*$type-scale);
+
+
+$type-size: 13pt;
+$baseline: 1.6;
+
+// Handle flash of unstyled text.
+.wf-loading * {
+  opacity: 0;
+}
+
+.wf-active * {
+  opacity: 1;
+  transition: opacity 500ms ease;
+}
+
+html {
+	font-family:$serif;
+	font-size:$type-size;
+	line-height:$baseline;
+}
+
+.chapter-header {
+  padding-bottom:1rem;
+}
+
+
+.chapter-header img {
+  display:block;
+  margin:3rem auto 2rem;
+  max-height:60vh;
+}
+
+
+.chapter-header h1 {
+  font-size:$type-size-4;
+  font-weight:700;
+  margin:2rem 0 1rem;
+  font-variant-caps: all-small-caps;
+  text-align: center;
+  letter-spacing:.05em;
+}
+
+.chapter-header p {
+  font-variant-caps: all-small-caps;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom:2rem;
+  font-size:$type-size-3;
+}
+
+p {
+  margin-bottom:1rem;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.first-word {
+  font-variant-caps: small-caps;
+  font-size:$type-size-3;
+  letter-spacing: .05em;
+  line-height:1.6rem;
+}
+
+main > p:first-of-type:first-letter {
+  font-size:$type-size-7;
+}
+
+.poem-outer {
+  text-align:center;
+  font-style: italic;
+  padding-top:1rem;
+  margin-bottom:2rem;
+}
+
+.poem-outer p {
+  margin-bottom:0;
+}
+
+.poem-inner {
+  display:inline-block;
+  text-align:left;
+}
+
+.poem-inner.dance {
+  padding-left:2rem;
+}
+
+.poem-inner.dance p {
+  text-indent: -2rem;
+}
+
+p.note {
+  text-align: center;
+  font-style: normal;
+  margin:1rem 0;
+  font-size:$type-size-0;
+}
+
+.poem-inner.tail span:nth-of-type(1) {
+font-size:calc(1rem*96/80);
+}
+
+.poem-inner.tail span:nth-of-type(2) {
+  font-size:calc(1rem*95/80);
+}
+
+.poem-inner.tail span:nth-of-type(3) {
+  font-size:calc(1rem*94/80);
+}
+
+.poem-inner.tail span:nth-of-type(4) {
+  font-size:calc(1rem*93/80);
+}
+
+.poem-inner.tail span:nth-of-type(5) {
+  font-size:calc(1rem*92/80);
+}
+
+.poem-inner.tail span:nth-of-type(6) {
+  font-size:calc(1rem*91/80);
+}
+
+.poem-inner.tail span:nth-of-type(7) {
+  font-size:calc(1rem*90/80);
+}
+
+.poem-inner.tail span:nth-of-type(8) {
+  font-size:calc(1rem*89/80);
+}
+
+.poem-inner.tail span:nth-of-type(9) {
+  font-size:calc(1rem*88/80);
+}
+
+.poem-inner.tail span:nth-of-type(10) {
+  font-size:calc(1rem*87/80);
+}
+
+.poem-inner.tail span:nth-of-type(11) {
+  font-size:calc(1rem*86/80);
+}
+
+.poem-inner.tail span:nth-of-type(12) {
+  font-size:calc(1rem*85/80);
+}
+
+.poem-inner.tail span:nth-of-type(13) {
+  font-size:calc(1rem*84/80);
+}
+
+.poem-inner.tail span:nth-of-type(14) {
+  font-size:calc(1rem*83/80);
+}
+
+.poem-inner.tail span:nth-of-type(15) {
+  font-size:calc(1rem*82/80);
+}
+
+.poem-inner.tail span:nth-of-type(16) {
+  font-size:calc(1rem*81/80);
+}
+
+.poem-inner.tail span:nth-of-type(17) {
+  font-size:calc(1rem*80/80);
+}
+
+.poem-inner.tail span:nth-of-type(18) {
+  font-size:calc(1rem*79/80);
+}
+
+.poem-inner.tail span:nth-of-type(19) {
+  font-size:calc(1rem*78/80);
+}
+
+.poem-inner.tail span:nth-of-type(20) {
+  font-size:calc(1rem*77/80);
+}
+
+.poem-inner.tail span:nth-of-type(21) {
+  font-size:calc(1rem*76/80);
+}
+
+.poem-inner.tail span:nth-of-type(22) {
+  font-size:calc(1rem*75/80);
+}
+
+.poem-inner.tail span:nth-of-type(23) {
+  font-size:calc(1rem*74/80);
+}
+
+.poem-inner.tail span:nth-of-type(24) {
+  font-size:calc(1rem*73/80);
+}
+
+.poem-inner.tail span:nth-of-type(25) {
+  font-size:calc(1rem*72/80);
+}
+
+.poem-inner.tail span:nth-of-type(26) {
+  font-size:calc(1rem*71/80);
+}
+
+.poem-inner.tail span:nth-of-type(27) {
+  font-size:calc(1rem*70/80);
+}
+
+.poem-inner.tail span:nth-of-type(28) {
+  font-size:calc(1rem*69/80);
+}
+
+.poem-inner.tail span:nth-of-type(29) {
+  font-size:calc(1rem*68/80);
+}
+
+.poem-inner.tail span:nth-of-type(30) {
+  font-size:calc(1rem*67/80);
+}
+
+.poem-inner.tail span:nth-of-type(31) {
+  font-size:calc(1rem*66/80);
+}
+
+.poem-inner.tail span:nth-of-type(32) {
+  font-size:calc(1rem*65/80);
+}
+
+.poem-inner.tail span:nth-of-type(33) {
+  font-size:calc(1rem*64/80);
+}
+
+.poem-inner.tail span:nth-of-type(34) {
+  font-size:calc(1rem*63/80);
+}
+
+.poem-inner.tail span:nth-of-type(35) {
+  font-size:calc(1rem*62/80);
+}
+
+.poem-inner.tail span:nth-of-type(36) {
+  font-size:calc(1rem*61/80);
+}
+
+.poem-inner.tail span:nth-of-type(37) {
+  font-size:calc(1rem*60/80);
+}
+
+.poem-inner.tail span:nth-of-type(38) {
+  font-size:calc(1rem*59/80);
+}
+
+.poem-inner.tail span:nth-of-type(39) {
+  font-size:calc(1rem*58/80);
+}
+
+.poem-inner.tail span:nth-of-type(40) {
+  font-size:calc(1rem*57/80);
+}
+
+.poem-inner.tail span:nth-of-type(41) {
+  font-size:calc(1rem*56/80);
+}
+
+.poem-inner.tail span:nth-of-type(42) {
+  font-size:calc(1rem*55/80);
+}
+
+.poem-inner.tail span:nth-of-type(43) {
+  font-size:calc(1rem*54/80);
+}
+
+.poem-inner.tail span:nth-of-type(44) {
+  font-size:calc(1rem*53/80);
+}
+
+.poem-inner.tail span:nth-of-type(45) {
+  font-size:calc(1rem*52/80);
+}
+
+.poem-inner.tail span:nth-of-type(46) {
+  font-size:calc(1rem*51/80);
+}
+
+.poem-inner.tail span:nth-of-type(47) {
+  font-size:calc(1rem*50/80);
+}
+
+.poem-inner.tail span:nth-of-type(48) {
+  font-size:calc(1rem*49/80);
+}
+.poem-inner.tail span:nth-of-type(49) {
+  font-size:calc(1rem*48/80);
+}
+
+.poem {
+  max-width:250px;
+  margin:0 auto;
+  margin-bottom:1rem;
+  font-style:italic;
+}
+
+.poem > span:nth-of-type(odd) {
+  margin-left:.5rem;
+}
+
+.poem > span:nth-of-type(even) {
+  margin-left:1.5rem;
+}
+
+.chorus {
+  margin-top:1rem;
+  text-align:center;
+}
+
+.chorus > span {
+  font-variant-caps: all-small-caps;
+  font-style:normal;
+}

@@ -1,0 +1,5 @@
+{
+  "layout" : "layouts/chapters.md",
+  "tags" : "chapter",
+  "templateEngineOverride": "njk,md"
+}

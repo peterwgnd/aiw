@@ -1,0 +1,96 @@
+
+.container > header {
+	
+}
+
+a#nav-link {
+	position:relative;
+	height:18px;
+	width:26px;
+	display:inline-block;
+	cursor: pointer;
+}
+
+a#nav-link:before, a#nav-link:after, a#nav-link > b {
+	display:block;
+	position:absolute;
+	background: #262013;
+	height:3px;
+	content:"";
+	width:100%;
+}
+
+a#nav-link:before {
+	top:0;
+}
+
+a#nav-link > b {
+	top:7.5px;
+}
+
+a#nav-link:after {
+	bottom:0;
+}
+
+.container > header {
+	text-align:right;
+}
+
+.main-nav {
+	transition: all .5s;
+	opacity:0;
+	position:absolute;
+	width:100%;
+	background:#fdfaf3;
+	height:100%;
+	left:100%;
+	padding:3rem 1rem;
+}
+
+body.active {
+	overflow: hidden;
+}
+
+.active .main-nav {
+	left:0;
+	opacity:.85;
+}
+
+.main-nav h2 {
+	text-align: center;
+	font-variant-caps: all-small-caps;
+	letter-spacing: .1em;
+}
+
+.main-nav ul {
+	text-align:left;
+	list-style-type: none;
+}
+
+.main-nav li a {
+	display:none;
+	flex-wrap: nowrap;
+}
+
+.active .main-nav li a { 
+	display: flex;
+}
+
+.main-nav li span {
+	display: block;
+	font-variant-caps: all-small-caps;
+	letter-spacing: .05em;
+}
+
+.main-nav li span:first-of-type {
+	flex-basis:15%;
+	text-align: right;
+	margin-right:.5rem;
+}
+
+.main-nav li span:last-of-type {
+	margin-left:.5rem;
+}
+
+
+

@@ -1,0 +1,62 @@
+@import '_typography.css';
+@import '_variables.css';
+@import '_nav.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-moz-selection {
+  background-color: $text-color;
+  color: $page-color;
+}
+::selection {
+  background-color: $text-color;
+  color: $page-color;
+}
+
+a {
+  color:inherit;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+
+
+body {
+  background-color: $page-color;
+  color: mix($text-color, $page-color, 90%);
+  min-height: 100vh;
+  background:  $page-color;
+
+  @media (min-width: $narrow) {
+  };
+}
+
+.container {
+  margin:0 auto;
+  padding:1rem;
+  overflow:hidden;
+  position:relative;
+
+  @media (min-width: $mid) {
+    width: 600px;
+  };
+
+  @media (min-width: $wide) {
+    width: 700px;
+  };
+
+}
+
+
+

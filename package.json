@@ -1,0 +1,31 @@
+{
+  "name": "cbs-magazine",
+  "version": "1.0.0",
+  "description": "scaffold for cbs magazine site",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "ELEVENTY_ENV=dev eleventy --serve",
+    "build": "eleventy && echo 'Site is built'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cu-biz/cbs-mag.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cu-biz/cbs-mag/issues"
+  },
+  "homepage": "https://github.com/cu-biz/cbs-mag#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.4",
+    "html-minifier": "^4.0.0",
+    "node-sass-promise": "^1.0.0",
+    "posthtml": "^0.13.4",
+    "posthtml-urls": "^1.0.0"
+  }
+}
