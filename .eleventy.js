@@ -22,6 +22,7 @@ module.exports = function(config) {
   config.addFilter("squash", require("./src/utils/filters/squash.js") );
   config.addFilter("dateDisplay", require("./src/utils/filters/date.js") );
   config.addFilter("bodyImage", require("./src/utils/filters/bodyImage.js") );
+  config.addFilter("roman", require("./src/utils/filters/roman.js") );
   config.addFilter("md", function(rawString) {
     return md.render(rawString);
   });
@@ -33,7 +34,7 @@ module.exports = function(config) {
   config.addTransform("htmlmin", require("./src/utils/minify-html.js"));
 
   // add sass
-  sass('./src/site/_includes/scss/app.scss', './dist/css/app.css', env);
+  sass('./src/site/_includes/scss/styles.scss', './dist/css/styles.css', env);
 
   // add head.js
   // minifyJs('./src/site/_includes/js/head.js','./dist/js/head.js',env);
@@ -76,7 +77,7 @@ module.exports = function(config) {
   // pass some assets right through
   config.addPassthroughCopy("./src/site/images");
   config.addPassthroughCopy("./src/site/admin");
-  config.addPassthroughCopy("./src/site/js/privacy.js");
+  config.addPassthroughCopy({"./src/site/_includes/js/app.js" : "js/app.js"});
   config.addPassthroughCopy({"./src/site/icons": "/"});
   config.addPassthroughCopy("./robots.txt");
 

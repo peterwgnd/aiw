@@ -41,7 +41,7 @@ $type-size-7: calc($type-size-6*$type-scale);
 $type-size-8: calc($type-size-7*$type-scale);
 
 
-$type-size: 13pt;
+$type-size: 16pt;
 $baseline: 1.6;
 
 // Handle flash of unstyled text.
@@ -337,7 +337,7 @@ font-size:calc(1rem*96/80);
 }
 
 .poem {
-  max-width:250px;
+  max-width:26ch;
   margin:0 auto;
   margin-bottom:1rem;
   font-style:italic;

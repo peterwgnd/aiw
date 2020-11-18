@@ -1,5 +1,6 @@
 {
-  "layout" : "layouts/chapters.md",
+  "layout" : "layouts/chapters.njk",
   "tags" : "chapter",
-  "templateEngineOverride": "njk,md"
+  "templateEngineOverride": "njk,md",
+  "permalink" : "chapter-{{ chapter }}/"
 }

@@ -1,0 +1,22 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+<article id="main-text">
+<header class="chapter-header">
+	<img src="../../images/{{ metaImage }}">
+	<h1>Chapter {{ chapter | roman }}</h1>
+	<p>{{ title }}</p>
+</header>
+<main>
+  {{ content | safe }}
+  <div class="footnote">
+  	<button id="load">Load Next Chapter</button>
+  	<a href="../chapter-{{ chapter - 1 }}">previous chapter</a>
+  	<a href="../chapter-{{ chapter + 1 }}">next chapter</a>
+  </div>
+</main>
+</article>
+<script src="../js/app.js">
+
+</script>
+{% endblock %}
