@@ -61,7 +61,7 @@ body {
 
 .letter {
   display:inline-block;
-  transition:all 2s;
+  transition:all 1s cubic-bezier(.55,0,1,.45);
 
   .animate & {
     transform:translateY(-100vh);

@@ -35,7 +35,7 @@ function splitContent (container) {
     let inVp = [];
     let d;
     let dInit = .25;
-    let dMax = 2;
+    let dMax = 5;
     let n = .25;
     els.forEach(x => notInViewport(x) ? x.setAttribute("style","opacity:0;") : inVp.push(x));
     inVp.forEach(x => {
